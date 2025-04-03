@@ -1,7 +1,7 @@
 {
   "version": 2,
   "functions": {
-    "src/route/**/*.js": {
+    "api/src/route/**/*.js": {
       "maxDuration": 10,
       "memory": 1024
     }
@@ -9,7 +9,7 @@
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "src/route/server.js"
+      "destination": "src/route/api/server.js"
     }
   ]
 }
