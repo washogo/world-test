@@ -1,6 +1,11 @@
 {
   "version": 2,
-  "functions": "api/**/*.js",
+  "functions": {
+    "api/**/*.js": {
+      "maxDuration": 10,
+      "memory": 1024
+    }
+  },
   "rewrites": [
     {
       "source": "/(.*)",
