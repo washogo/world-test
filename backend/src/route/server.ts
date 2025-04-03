@@ -12,12 +12,9 @@ const express = require("express");
 console.log("サーバー起動中...");
 
 const app = express();
-const port = 3001;
+const port = 3000;
 
 app.use(express.json());
-
-// テスト用のルート
-app.get("/", (req: Request, res: Response) => res.send("Express on Vercel"));
 
 // ルート設定
 app.use("/api", worldPostApi);
@@ -25,6 +22,8 @@ app.use("/api", worldPostListApi);
 app.use("/api", userApi);
 app.use("/api", likeApi);
 app.use("/api", countryNameApi);
+// テスト用のルート
+app.get("/api", (req: Request, res: Response) => res.send("Express on Vercel"));
 
 // サーバ起動
 app.listen(port, () => {
