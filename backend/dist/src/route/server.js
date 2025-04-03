@@ -13,10 +13,8 @@ dotenv_1.default.config();
 const express = require("express");
 console.log("サーバー起動中...");
 const app = express();
-const port = 3001;
+const port = 5001;
 app.use(express.json());
-// テスト用のルート
-app.get("/", (req, res) => res.send("Express on Vercel"));
 // ルート設定
 app.use("/api", index_1.default);
 app.use("/api", index_2.default);
@@ -27,4 +25,3 @@ app.use("/api", index_5.default);
 app.listen(port, () => {
     console.log(`サーバーがhttp://localhost:${port}で起動しました`);
 });
-exports.default = app;
