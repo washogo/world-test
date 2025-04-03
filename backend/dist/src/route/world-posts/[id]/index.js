@@ -26,7 +26,11 @@ router.get("/world-posts/:id", (req, res) => __awaiter(void 0, void 0, void 0, f
     if (!worldPostDataId) {
         res
             .status(404)
-            .json({ success: false, message: "特定の投稿取得に失敗", data: null });
+            .json({
+            success: false,
+            message: "特定の投稿データがありませんでした",
+            data: null,
+        });
         return;
     }
     // 特定の投稿データ取得に成功した場合
