@@ -1,15 +1,14 @@
 {
   "version": 2,
   "functions": {
-    "api/**/**/**/*.js": {
-      "maxDuration": 10,
-      "memory": 1024
+    "src/route/**/*.js": {
+      "runtime": "nodejs20.x"
     }
   },
   "rewrites": [
     {
       "source": "/(.*)",
-      "destination": "api/src/route/server.js"
+      "destination": "src/route/server.js"
     }
   ]
 }
