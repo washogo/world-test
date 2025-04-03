@@ -1,7 +1,7 @@
 {
   "version": 2,
   "functions": {
-    "api/**/*.js": {
+    "src/route/**/*.js": {
       "maxDuration": 10,
       "memory": 1024
     }
