@@ -1,14 +1,13 @@
 {
-  "builds": [
-    {
-      "src": "dist/src/route/server.js",
-      "use": "@vercel/node"
+  "functions": {
+    "src/route/**/*.js": {
+      "runtime": "nodejs20.x"
     }
-  ],
-  "routes": [
+  },
+  "rewrites": [
     {
-      "src": "/(.*)",
-      "dest": "dist/src/route/server.js"
+      "source": "/(.*)",
+      "destination": "/src/route"
     }
   ]
 }

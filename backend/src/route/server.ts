@@ -4,6 +4,7 @@ import userApi from "./user/index";
 import likeApi from "./likes/index";
 import countryNameApi from "./country-name/index";
 import dotenv from "dotenv";
+import { Request, Response } from "express";
 dotenv.config();
 
 const express = require("express");
@@ -14,6 +15,9 @@ const app = express();
 const port = 3000;
 
 app.use(express.json());
+
+// テスト用のルート
+app.get("/", (req: Request, res: Response) => res.send("Express on Vercel"));
 
 // ルート設定
 app.use("/api", worldPostApi);
