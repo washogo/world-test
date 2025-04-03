@@ -31,4 +31,4 @@ app.listen(port, () => {
   console.log(`サーバーがhttp://localhost:${port}で起動しました`);
 });
 
-module.exports = app;
+export default app;
