@@ -4,10 +4,9 @@
   "main": "dist/server.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only ./src/route/server.ts",
-    "build": "tsc",
+    "build": "npx prisma generate && tsc",
     "start": "node dist/src/route/server.js",
-    "test": "jest",
-    "postinstall": "npx prisma generate"
+    "test": "jest"
   },
   "devDependencies": {
     "@types/jest": "^29.5.14",
