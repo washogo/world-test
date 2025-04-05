@@ -5,9 +5,10 @@ import likeApi from "./likes/index";
 import countryNameApi from "./country-name/index";
 import dotenv from "dotenv";
 import { Request, Response } from "express";
+import express from "express";
 dotenv.config();
 
-const express = require("express");
+// const express = require("express");
 
 console.log("サーバー起動中...");
 
@@ -23,7 +24,6 @@ app.use("/api", worldPostListApi);
 app.use("/api", userApi);
 app.use("/api", likeApi);
 app.use("/api", countryNameApi);
-// テスト用のルート
 
 // サーバ起動
 app.listen(port, () => {
