@@ -15,7 +15,7 @@ const app = express();
 const port = 3000;
 
 app.use(express.json());
-app.get("/", (req: Request, res: Response) => res.send("Express on Vercel"));
+// app.get("/", (req: Request, res: Response) => res.send("Express on Vercel"));
 
 // ルート設定
 app.use("/api", worldPostApi);
