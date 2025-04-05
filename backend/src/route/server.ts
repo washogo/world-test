@@ -13,7 +13,7 @@ dotenv.config();
 console.log("サーバー起動中...");
 
 const app = express();
-const port = 5001;
+const port = 3001;
 
 app.use(express.json());
 // app.get("/", (req: Request, res: Response) => res.send("Express on Vercel"));
