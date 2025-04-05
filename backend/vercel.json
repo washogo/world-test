@@ -5,10 +5,7 @@
   "rewrites": [{ "source": "/(.*)", "destination": "/dist/src/route/server.js" }],
   "functions": {
     "dist/src/route/server.js": {
-      "runtime": "nodejs18.x",
-      "maxDuration": 10,
-      "memory": 1024,
-      "maxLambdaSize": "50mb"
+      "runtime": "nodejs18.x"
     }
   }
 }
