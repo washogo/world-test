@@ -8,28 +8,8 @@
   ],
   "routes": [
     {
-      "src": "/",
-      "dest": "/dist/src/route/server.js"
-    },
-    {
-      "src": "/country-name",
-      "dest": "/dist/src/route/country-name/index.js"
-    },
-    {
-      "src": "/likes",
-      "dest": "/dist/src/route/likes/index.js"
-    },
-    {
-      "src": "/user",
-      "dest": "/dist/src/route/user/index.js"
-    },
-    {
-      "src": "/world-posts",
-      "dest": "/dist/src/route/world-posts/index.js"
-    },
-    {
-      "src": "/world-posts/[id]",
-      "dest": "/dist/src/route/world-posts/[id]/index.js"
+      "src": "/api/(.*)",
+      "dest": "dist/src/route/server.js"
     }
   ]
 }
