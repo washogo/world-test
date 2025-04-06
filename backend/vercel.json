@@ -4,12 +4,57 @@
     {
       "src": "dist/src/route/server.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "dist/src/route/country-name/index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "dist/src/route/likes/index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "dist/src/route/user/index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "dist/src/route/world-posts/index.js",
+      "use": "@vercel/node"
+    },
+    {
+      "src": "dist/src/route/world-posts/[id]/index.js",
+      "use": "@vercel/node"
     }
   ],
   "routes": [
     {
-      "src": "/(.*)",
+      "src": "/",
       "dest": "/dist/src/route/server.js",
+      "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"]
+    },
+    {
+      "src": "/country-name",
+      "dest": "/dist/src/route/country-name/index.js",
+      "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"]
+    },
+    {
+      "src": "/likes",
+      "dest": "/dist/src/route/likes/index.js",
+      "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"]
+    },
+    {
+      "src": "/user",
+      "dest": "/dist/src/route/user/index.js",
+      "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"]
+    },
+    {
+      "src": "/world-posts",
+      "dest": "/dist/src/route/world-posts/index.js",
+      "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"]
+    },
+    {
+      "src": "/world-posts/[id]",
+      "dest": "/dist/src/route/world-posts/[id]/index.js",
       "methods": ["GET", "POST", "PUT", "DELETE", "PATCH", "OPTIONS"]
     }
   ]
