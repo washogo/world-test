@@ -2,5 +2,5 @@
   "buildCommand": "npm run build",
   "outputDirectory": "dist",
   "installCommand": "npm install",
-  "rewrites": [{ "source": "/(.*)", "destination": "/dist/src/route/server.js" }]
+  "rewrites": [{ "source": "/(.*)", "destination": "/src/route/server.js" }]
 }
