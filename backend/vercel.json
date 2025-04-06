@@ -1,6 +1,15 @@
 {
-  "buildCommand": "npm run build",
-  "outputDirectory": "dist",
-  "installCommand": "npm install",
-  "rewrites": [{ "source": "/(.*)", "destination": "/src/route/server.js" }]
+  "version": 2,
+  "builds": [
+    {
+      "src": "dist/**/**/*.js",
+      "use": "@vercel/node"
+    }
+  ],
+  "routes": [
+    {
+      "src": "/(.*)",
+      "dest": "dist/src/route/server.js"
+    }
+  ]
 }
