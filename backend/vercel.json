@@ -5,7 +5,7 @@
   "rewrites": [{ "source": "/api/:path*", "destination": "/dist/src/route/server.js" }],
   "functions": {
     "dist/src/route/server.js": {
-      "runtime": "nodejs@20.x"
+      "runtime": "nodejs"
     }
   }
 }
